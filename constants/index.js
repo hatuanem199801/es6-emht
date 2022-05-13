@@ -1,26 +1,31 @@
-// ES6
-const apple = "apple";
+const apple = "Apple";
+if (true) {
+    const apple = "Apple 1";
+    console.log({apple});
+}
 
 for (let i = 0; i < 10; i++) {
-    const apple = 'apple loop ';
-    console.log(apple + i);
+    const apple = "Apple " + i;
+    console.log({apple});
 }
 
 function getApple() {
-   const apple = "apple 1";
-   console.log(apple);
+    const apple = "Get apple 1";
+    console.log({apple});
 }
 
 getApple();
 
 console.log(apple);
 
-// ES5
-// Object.defineProperty(typeof global === 'object' ? global : window, "PI", {
-//     value: 3.141123123123,
-//     enumerable: true,
-//     writable: false,
-//     configurable: false
-// });
+const fruit = {
+    title: "Apple",
+    price: 200,
+    description: "Blab blab ...."
+};
+console.log(fruit);
+fruit.title = "Pine Apple";
+fruit.price = 100;
+fruit.description = "lorem ipsum ....";
 
-// console.log(PI);
+console.log(fruit);
